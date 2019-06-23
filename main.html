@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src=javascript/jquery-3.4.0.min.js> </script> <script src=javascript/jquery-ui.js> </script> <script
+        src=javascript/system.js> </script> <title>人狼GMサポート</title>
+</head>
+
+<body>
+
+    <div class="title">
+        <img src="logo.png" alt="">
+    </div>
+    
+
+    <span class="round-table"></span>   
+
+    <div class="specialist-line-height top-line">
+
+        <h3>【人狼陣営】</h3>
+        <span class="left-margin">人狼：</span>
+        <span id="wereWolfCount">0人</span>
+
+        <button onclick="wereWolfCountUp()">+</button>
+        <button class="spase" onclick="wereWolfCountDown()">-</button>
+
+
+        <span>人狼の子供：</span>
+        <span id="childOfWereWolfCount">0人</span>
+
+        <button onclick="childOfWereWolfCountUp()">+</button>
+        <button class="spase" onclick="childOfWereWolfCountDown()">-</button>
+
+
+        <span>裏切り者：</span>
+        <span id="betrayerCount">0人</span>
+
+        <button onclick="betrayerCountUp()">+</button>
+        <button onclick="betrayerCountDown()">-</button>
+
+    </div>
+
+    <div class="specialist-line-height">
+        <h3>【市民陣営】</h3>
+
+        <span class="left-margin">市民：</span>
+        <span id="citizenCount">0人</span>
+
+        <button onclick="citizenCountUp()">+</button>
+        <button class="spase" onclick="citizenCountDown()">-</button>
+
+
+        <span>予言者：</span>
+        <span id="prophetCount">0人</span>
+
+        <button onclick="prophetCountUp()">+</button>
+        <button class="spase" onclick="prophetCountDown()">-</button>
+
+
+        <span>霊媒師：</span>
+        <span id="necromancerCount">0人</span>
+
+        <button onclick="necromancerCountUp()">+</button>
+        <button class="spase" onclick="necromancerCountDown()">-</button>
+
+
+        <span>ボディーガード：</span>
+        <span id="bodyGuardCount">0人</span>
+
+        <button onclick="bodyGuardCountUp()">+</button>
+        <button class="spase" onclick="bodyGuardCountDown()">-</button>
+
+
+        <span>共有者：</span>
+        <span id="twinsCount">0人</span>
+
+        <button onclick="twinsCountUp()">+</button>
+        <button onclick="twinsCountDown()">-</button>
+
+
+    </div>
+
+
+    <div class="specialist-line-height">
+        <h3>【第三陣営】</h3>
+
+        <span class="left-margin">恋人：</span>
+        <span id="loversCount">0人</span>
+
+        <button onclick="loversCountUp()">+</button>
+        <button class="spase" onclick="loversCountDown()">-</button>
+
+
+        <span>妖狐：</span>
+        <span id="mythologicalFoxCount">0人</span>
+
+        <button onclick="mythologicalFoxCountUp()">+</button>
+        <button class="spase" onclick="mythologicalFoxCountDown()">-</button>
+
+    </div>
+
+    <div class="specialist-line-height bottom-line">
+        <h3>【追加】</h3>
+        <span class="left-margin">追加・市民陣営：</span>
+        <span id="citizenSpareCount">0人</span>
+
+        <button onclick="citizenSpareCountUp()">+</button>
+        <button class="spase" onclick="citizenSpareCountDown()">-</button>
+
+
+        <span>追加・人狼陣営：</span>
+        <span id="wereWolfSpareCount">0人</span>
+
+        <button onclick="wereWolfSpareCountUp()">+</button>
+        <button class="spase" onclick="wereWolfSpareCountDown()">-</button>
+
+
+        <span>追加・第三陣営：</span>
+        <span id="thaadSpareCount">0人</span>
+
+        <button onclick="thaadSpareCountUp()">+</button>
+        <button onclick="thaadSpareCountDown()">-</button>
+    </div>
+
+
+    <div class="seat-count">
+        <h3>【席の設定】</h3>
+        <span class="left-margin">席：</span>
+        <span id="seatIconCount">0人</span>
+        <button onclick="seatCount()">set</button>
+    </div>
+
+
+    <div class="timer">
+        <h3>【タイマー】</h3>
+        <form name="timer">
+            <input type="text" value="" class="left-margin">分
+            <input type="text" value="">秒<br>
+            <input type="button" value="スタート" class="left-margin" onclick="cntStart()">
+            <input type="button" value="ストップ" onclick="cntStop()">
+        </form>
+
+    </div>
+
+
+
+
+    <div class="attack-guard-icon">
+
+        <h3>【アイコン】</h3>
+
+        <div class="wolf-attack left-margin"></div>
+        <div class="wolf-attack"></div>
+        <div class="wolf-attack"></div>
+
+        <div class="guard"></div>
+        <div class="guard"></div>
+        <div class="guard"></div>
+
+    </div>
+
+    <div class="seat-icon-position" id="seatIconDiv">
+        <span>
+            <div class="seat-icon-GM left-margin"></div>
+        </span>
+    </div>
+
+    <div class="name-box-position" id="nameBoxDiv"></div>
+
+
+
+
+    <audio id="alermSound" preload="auto">
+        <source src="alerm1.mp3" type="audio/mp3">
+    </audio>
+
+    <script src=javascript/selectbox-system.js> </script> <script src=javascript/timer.js> </script> </body>
+</html>

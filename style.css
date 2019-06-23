@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 1300px;
+}
+
+/*位置*/
+
+.title {
+    text-align:center;
+    background: #afd4ff;
+}
+
+.spase {
+    margin-right: 10px;    
+}
+
+.specialist-line-height{
+    line-height: 44px;
+    background: #d8e9fd;
+}
+
+.top-line {
+    border-top:#000000 solid 1px;
+}
+
+.bottom-line {
+    border-bottom:#000000 solid 1px;
+}
+
+.round-table {
+    position: absolute;
+    top: 850px;
+    left: 600px;
+    width: 350px;
+    height: 350px;
+    border: #000000 solid 1px;
+    border-radius: 200px;
+    display: inline-block;
+
+}
+
+.wolf-attack {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background: rgb(218, 33, 33);
+    border: #ffffff solid 1px;
+    z-index: 3;
+    display: inline-block;
+}
+
+.guard {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background: rgb(53, 53, 219);
+    border: #ffffff solid 1px;
+    z-index: 3;
+    display: inline-block;
+}
+
+.attack-guard-icon {
+    position: relative;
+    top: 40px;
+}
+
+.seat-count {
+    position: relative;
+    top: 20px;
+}
+
+.seat-icon {
+    position: relative;
+    top: 50px;
+    width: 13px;
+    height: 13px;
+    margin: 2px;
+    border: black 4px solid;
+    display: inline-block;
+}
+
+.seat-icon-GM {
+    position: relative;
+    top: 50px;
+    width: 13px;
+    height: 13px;
+    margin: 2px;
+    border: #ba55d3 4px solid;
+    display: inline-block;
+}
+
+.timer {
+    position: relative;
+    top: 25px
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/*位置*/
+
+.name-box {
+    position: relative;
+    text-align: center;
+    top: 50px;
+    margin: 2px;
+    padding: 10px;
+    width: 150px;
+    height: 20px;
+    color: #FFFFFF;
+    border: #000000 solid 1px;
+    display: inline-block;
+    z-index: 2;
+}
+
+.name-box-werewolf-team {
+    background-color: #a42e2e;
+}
+
+.name-box-citizen-team {
+    background-color: #2ea43e;
+}
+
+.name-box-thaad-team {
+    background-color: #a4982e;
+}
+
+.name-input {
+    display: inline-block;
+    width: 140px;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+/*空白*/
+.left-margin {
+    margin-left: 10px;
+}
+
+.top-margin{
+    margin-top: 10px;
+}
+
+.manual-button{
+    border: #000000 solid 1px;
+    display: inline-block;
+    margin-bottom:10px;
+}
+
+.manual-button:hover{
+    border: #2e65a4 solid 1px;
+    background: #9ac3f1;
+}
+
