@@ -46,7 +46,6 @@ function tmWrite(int)
   if (int<=0)
   {
     reSet();
-    document.getElementById("alermSound").play();
     alert("時間です！");
   }
   else

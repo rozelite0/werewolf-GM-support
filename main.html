@@ -1,183 +1,202 @@
 <!DOCTYPE html>
 <html lang="jp">
 
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="material/favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <script src=javascript/jquery-3.4.0.min.js> </script> <script src=javascript/jquery-ui.js> </script> <script
-        src=javascript/system.js> </script> <title>人狼GMサポート</title>
-</head>
+    <script src=javascript/jquery-3.4.0.min.js> </script>
+    <script src=javascript/jquery-ui.js> </script> 
+    <script src=javascript/system.js> </script> 
+    <title>人狼GMサポート</title>
+    </head>
 
-<body>
+    <body>
 
-    <div class="title">
-        <img src="logo.png" alt="">
-    </div>
-    
+        <!--header-->
+        <header>
+            <a href="main.html"><img src="material/header.png"></a>
+            <ul>
+                <li><a href=HowToUse.html>使い方</a></li>
+            </ul>
+        </header>
 
-    <span class="round-table"></span>   
+        <!--main-->
+        <main>
 
-    <div class="specialist-line-height top-line">
+         <!--職業-->
+            <div>
+                <!--人狼陣営-->
+                <div>
+                    <h3>【人狼陣営】</h3>
 
-        <h3>【人狼陣営】</h3>
-        <span class="left-margin">人狼：</span>
-        <span id="wereWolfCount">0人</span>
+                    <span >人狼：</span>
+                    <span id="wereWolfCount">0人</span>
 
-        <button onclick="wereWolfCountUp()">+</button>
-        <button class="spase" onclick="wereWolfCountDown()">-</button>
+                    <button onclick="wereWolfCountUp()">+</button>
+                    <button  onclick="wereWolfCountDown()">-</button>
 
 
-        <span>人狼の子供：</span>
-        <span id="childOfWereWolfCount">0人</span>
+                    <span>人狼の子供：</span>
+                    <span id="childOfWereWolfCount">0人</span>
 
-        <button onclick="childOfWereWolfCountUp()">+</button>
-        <button class="spase" onclick="childOfWereWolfCountDown()">-</button>
+                    <button onclick="childOfWereWolfCountUp()">+</button>
+                    <button  onclick="childOfWereWolfCountDown()">-</button>
 
 
-        <span>裏切り者：</span>
-        <span id="betrayerCount">0人</span>
+                    <span>裏切り者：</span>
+                    <span id="betrayerCount">0人</span>
 
-        <button onclick="betrayerCountUp()">+</button>
-        <button onclick="betrayerCountDown()">-</button>
+                    <button onclick="betrayerCountUp()">+</button>
+                    <button onclick="betrayerCountDown()">-</button>
+                </div>
 
-    </div>
+             <!--市民陣営-->
+                <div>
 
-    <div class="specialist-line-height">
-        <h3>【市民陣営】</h3>
+                    <h3>【市民陣営】</h3>
 
-        <span class="left-margin">市民：</span>
-        <span id="citizenCount">0人</span>
+                    <span >市民：</span>
+                    <span id="citizenCount">0人</span>
 
-        <button onclick="citizenCountUp()">+</button>
-        <button class="spase" onclick="citizenCountDown()">-</button>
+                    <button onclick="citizenCountUp()">+</button>
+                    <button  onclick="citizenCountDown()">-</button>
 
 
-        <span>予言者：</span>
-        <span id="prophetCount">0人</span>
+                    <span>予言者：</span>
+                    <span id="prophetCount">0人</span>
 
-        <button onclick="prophetCountUp()">+</button>
-        <button class="spase" onclick="prophetCountDown()">-</button>
+                    <button onclick="prophetCountUp()">+</button>
+                    <button onclick="prophetCountDown()">-</button>
 
 
-        <span>霊媒師：</span>
-        <span id="necromancerCount">0人</span>
+                    <span>霊媒師：</span>
+                    <span id="necromancerCount">0人</span>
 
-        <button onclick="necromancerCountUp()">+</button>
-        <button class="spase" onclick="necromancerCountDown()">-</button>
+                    <button onclick="necromancerCountUp()">+</button>
+                    <button onclick="necromancerCountDown()">-</button>
 
 
-        <span>ボディーガード：</span>
-        <span id="bodyGuardCount">0人</span>
+                    <span>ボディーガード：</span>
+                    <span id="bodyGuardCount">0人</span>
 
-        <button onclick="bodyGuardCountUp()">+</button>
-        <button class="spase" onclick="bodyGuardCountDown()">-</button>
+                    <button onclick="bodyGuardCountUp()">+</button>
+                    <button onclick="bodyGuardCountDown()">-</button>
 
 
-        <span>共有者：</span>
-        <span id="twinsCount">0人</span>
+                    <span>共有者：</span>
+                    <span id="twinsCount">0人</span>
 
-        <button onclick="twinsCountUp()">+</button>
-        <button onclick="twinsCountDown()">-</button>
+                    <button onclick="twinsCountUp()">+</button>
+                    <button onclick="twinsCountDown()">-</button>
 
+                </div>
 
-    </div>
+             <!--第三陣営-->
+             <div>
+                    <h3>【第三陣営】</h3>
 
+                    <span >恋人：</span>
+                    <span id="loversCount">0人</span>
 
-    <div class="specialist-line-height">
-        <h3>【第三陣営】</h3>
+                    <button onclick="loversCountUp()">+</button>
+                    <button onclick="loversCountDown()">-</button>
 
-        <span class="left-margin">恋人：</span>
-        <span id="loversCount">0人</span>
 
-        <button onclick="loversCountUp()">+</button>
-        <button class="spase" onclick="loversCountDown()">-</button>
+                    <span>妖狐：</span>
+                    <span id="mythologicalFoxCount">0人</span>
 
+                    <button onclick="mythologicalFoxCountUp()">+</button>
+                    <button onclick="mythologicalFoxCountDown()">-</button>
+                </div>
 
-        <span>妖狐：</span>
-        <span id="mythologicalFoxCount">0人</span>
+                <div>
+                    <h3>【追加】</h3>
 
-        <button onclick="mythologicalFoxCountUp()">+</button>
-        <button class="spase" onclick="mythologicalFoxCountDown()">-</button>
+                    <span >追加・市民陣営：</span>
+                    <span id="citizenSpareCount">0人</span>
 
-    </div>
+                    <button onclick="citizenSpareCountUp()">+</button>
+                    <button onclick="citizenSpareCountDown()">-</button>
 
-    <div class="specialist-line-height bottom-line">
-        <h3>【追加】</h3>
-        <span class="left-margin">追加・市民陣営：</span>
-        <span id="citizenSpareCount">0人</span>
 
-        <button onclick="citizenSpareCountUp()">+</button>
-        <button class="spase" onclick="citizenSpareCountDown()">-</button>
+                    <span>追加・人狼陣営：</span>
+                    <span id="wereWolfSpareCount">0人</span>
 
+                    <button onclick="wereWolfSpareCountUp()">+</button>
+                    <button onclick="wereWolfSpareCountDown()">-</button>
 
-        <span>追加・人狼陣営：</span>
-        <span id="wereWolfSpareCount">0人</span>
 
-        <button onclick="wereWolfSpareCountUp()">+</button>
-        <button class="spase" onclick="wereWolfSpareCountDown()">-</button>
+                    <span>追加・第三陣営：</span>
+                    <span id="thaadSpareCount">0人</span>
 
+                    <button onclick="thaadSpareCountUp()">+</button>
+                    <button onclick="thaadSpareCountDown()">-</button>
+                 </div>
 
-        <span>追加・第三陣営：</span>
-        <span id="thaadSpareCount">0人</span>
 
-        <button onclick="thaadSpareCountUp()">+</button>
-        <button onclick="thaadSpareCountDown()">-</button>
-    </div>
+            </div>
 
+            <!--アイコンとか-->
+            <div>
+                <div>
+                    <hr>
+                    <h3>【席の設定】</h3>
+                    <span >席：</span>
+                    <span id="seatIconCount">0人</span>
+                    <button onclick="seatCount()">set</button>
+                </div>
 
-    <div class="seat-count">
-        <h3>【席の設定】</h3>
-        <span class="left-margin">席：</span>
-        <span id="seatIconCount">0人</span>
-        <button onclick="seatCount()">set</button>
-    </div>
+                <div>
+                    <hr>
+                    <h3>【タイマー】</h3>
+                    <form name="timer">
+                        <input type="text" value="" >分
+                        <input type="text" value="">秒<br>
+                        <input type="button" value="スタート"  onclick="cntStart()">
+                        <input type="button" value="ストップ" onclick="cntStop()">
+                    </form>
+                </div>
 
+                <div>
+                    <hr>
+                    <h3>【ツール】</h3>
+                    <div class="wolf-attack"></div>
+                    <div class="wolf-attack"></div>
+                    <div class="wolf-attack"></div>
+                
+                    <div class="guard"></div>
+                    <div class="guard"></div>
+                    <div class="guard"></div>
 
-    <div class="timer">
-        <h3>【タイマー】</h3>
-        <form name="timer">
-            <input type="text" value="" class="left-margin">分
-            <input type="text" value="">秒<br>
-            <input type="button" value="スタート" class="left-margin" onclick="cntStart()">
-            <input type="button" value="ストップ" onclick="cntStop()">
-        </form>
+                    <div class="seat-icon-position" id="seatIconDiv">
+                        <span>
+                            <div class="seat-icon-GM left-margin"></div>
+                        </span>
+                    </div>
 
-    </div>
+                    <div id="playerBoxDiv"></div>
 
+                    <div class="round-table"></div>
 
+                </div>
 
+            </div>
 
-    <div class="attack-guard-icon">
 
-        <h3>【アイコン】</h3>
 
-        <div class="wolf-attack left-margin"></div>
-        <div class="wolf-attack"></div>
-        <div class="wolf-attack"></div>
+        </main>
 
-        <div class="guard"></div>
-        <div class="guard"></div>
-        <div class="guard"></div>
+        <!--footer-->
+        <footer>
+            <p>&copy; 2019 Rozelite0 All rights reserved.</p>
+        </footer>
 
-    </div>
+        <script src=javascript/selectbox-system.js> </script>
+        <script src=javascript/timer.js> </script>
+        
+    </body>
 
-    <div class="seat-icon-position" id="seatIconDiv">
-        <span>
-            <div class="seat-icon-GM left-margin"></div>
-        </span>
-    </div>
-
-    <div class="name-box-position" id="nameBoxDiv"></div>
-
-
-
-
-    <audio id="alermSound" preload="auto">
-        <source src="alerm1.mp3" type="audio/mp3">
-    </audio>
-
-    <script src=javascript/selectbox-system.js> </script> <script src=javascript/timer.js> </script> </body>
 </html>

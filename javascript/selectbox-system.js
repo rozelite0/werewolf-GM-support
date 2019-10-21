@@ -18,7 +18,7 @@ function wereWolfCountUp(){
         //親要素のdivに「id+カウント数」を追加
         div_element.setAttribute("id", "wereWolfParent" + wereWolfCount);
         div_element.innerHTML = '<div class="name-box name-box-werewolf-team"><input type="text" class="name-input" value="●人狼："></div>';
-        var parent_object = document.getElementById("nameBoxDiv");
+        var parent_object = document.getElementById("playerBoxDiv");
         parent_object.appendChild(div_element);
         $('.name-box').draggable();
     }
@@ -83,7 +83,7 @@ function childOfWereWolfCountUp(){
         //親要素のdivに「id+カウント数」を追加
         div_element.setAttribute("id", "childOfWereWolfParent" + childOfWereWolfCount);
         div_element.innerHTML = '<div class="name-box name-box-werewolf-team"><input type="text" class="name-input" value="●人狼(子)："></div>';
-        var parent_object = document.getElementById("nameBoxDiv");
+        var parent_object = document.getElementById("playerBoxDiv");
         parent_object.appendChild(div_element);
         $('.name-box').draggable();
     }
@@ -123,7 +123,7 @@ function citizenCountUp(){
         //親要素のdivに「id+カウント数」を追加
         div_element.setAttribute("id", "citizenParent" + citizenCount);
         div_element.innerHTML = '<div class="name-box name-box-citizen-team"><input type="text" class="name-input" value="○市民："></div>';
-        var parent_object = document.getElementById("nameBoxDiv");
+        var parent_object = document.getElementById("playerBoxDiv");
         parent_object.appendChild(div_element);
         $('.name-box').draggable();
     }
@@ -210,7 +210,7 @@ function prophetCountUp(){
         //親要素のdivに「id+カウント数」を追加
         div_element.setAttribute("id", "prophetParent" + prophetCount);
         div_element.innerHTML = '<div class="name-box name-box-citizen-team"><input type="text" class="name-input" value="○予言者："></div>';
-        var parent_object = document.getElementById("nameBoxDiv");
+        var parent_object = document.getElementById("playerBoxDiv");
         parent_object.appendChild(div_element);
         $('.name-box').draggable();
     }
@@ -255,7 +255,7 @@ function necromancerCountUp(){
         //親要素のdivに「id+カウント数」を追加
         div_element.setAttribute("id", "necromancerParent" + necromancerCount);
         div_element.innerHTML = '<div class="name-box name-box-citizen-team"><input type="text" class="name-input" value="○霊媒師："></div>';
-        var parent_object = document.getElementById("nameBoxDiv");
+        var parent_object = document.getElementById("playerBoxDiv");
         parent_object.appendChild(div_element);
         $('.name-box').draggable();
     }
@@ -301,7 +301,7 @@ function bodyGuardCountUp(){
         //親要素のdivに「id+カウント数」を追加
         div_element.setAttribute("id", "bodyGuardParent" + bodyGuardCount);
         div_element.innerHTML = '<div class="name-box name-box-citizen-team"><input type="text" class="name-input" value="○ボディーガード："></div>';
-        var parent_object = document.getElementById("nameBoxDiv");
+        var parent_object = document.getElementById("playerBoxDiv");
         parent_object.appendChild(div_element);
         $('.name-box').draggable();
     }
@@ -347,7 +347,7 @@ function twinsCountUp(){
         //親要素のdivに「id+カウント数」を追加
         div_element.setAttribute("id", "twinsParent" + twinsCount);
         div_element.innerHTML = '<div class="name-box name-box-citizen-team"><input type="text" class="name-input" value="○共有者："></div>';
-        var parent_object = document.getElementById("nameBoxDiv");
+        var parent_object = document.getElementById("playerBoxDiv");
         parent_object.appendChild(div_element);
         $('.name-box').draggable();
     }
@@ -393,7 +393,7 @@ function betrayerCountUp(){
         //親要素のdivに「id+カウント数」を追加
         div_element.setAttribute("id", "betrayerParent" + betrayerCount);
         div_element.innerHTML = '<div class="name-box name-box-werewolf-team"><input type="text" class="name-input" value="○裏切り者："></div>';
-        var parent_object = document.getElementById("nameBoxDiv");
+        var parent_object = document.getElementById("playerBoxDiv");
         parent_object.appendChild(div_element);
         $('.name-box').draggable();
     }
@@ -439,7 +439,7 @@ function loversCountUp(){
         //親要素のdivに「id+カウント数」を追加
         div_element.setAttribute("id", "loversParent" + loversCount);
         div_element.innerHTML = '<div class="name-box name-box-thaad-team"><input type="text" class="name-input" value="○恋人："></div>';
-        var parent_object = document.getElementById("nameBoxDiv");
+        var parent_object = document.getElementById("playerBoxDiv");
         parent_object.appendChild(div_element);
         $('.name-box').draggable();
     }
@@ -485,7 +485,7 @@ function mythologicalFoxCountUp(){
         //親要素のdivに「id+カウント数」を追加
         div_element.setAttribute("id", "mythologicalFoxParent" + mythologicalFoxCount);
         div_element.innerHTML = '<div class="name-box name-box-thaad-team"><input type="text" class="name-input" value="○妖狐："></div>';
-        var parent_object = document.getElementById("nameBoxDiv");
+        var parent_object = document.getElementById("playerBoxDiv");
         parent_object.appendChild(div_element);
         $('.name-box').draggable();
     }
@@ -526,7 +526,7 @@ function citizenSpareCountUp(){
         //親要素のdivに「id+カウント数」を追加
         div_element.setAttribute("id", "citizenSpareParent" + citizenSpareCount);
         div_element.innerHTML = '<div class="name-box name-box-citizen-team"><input type="text" class="name-input" value="："></div>';
-        var parent_object = document.getElementById("nameBoxDiv");
+        var parent_object = document.getElementById("playerBoxDiv");
         parent_object.appendChild(div_element);
         $('.name-box').draggable();
     }
@@ -577,7 +577,7 @@ function wereWolfSpareCountUp(){
         //親要素のdivに「id+カウント数」を追加
         div_element.setAttribute("id", "wereWolfSpareParent" + wereWolfSpareCount);
         div_element.innerHTML = '<div class="name-box name-box-werewolf-team"><input type="text" class="name-input" value="："></div>';
-        var parent_object = document.getElementById("nameBoxDiv");
+        var parent_object = document.getElementById("playerBoxDiv");
         parent_object.appendChild(div_element);
         $('.name-box').draggable();
     }
@@ -628,7 +628,7 @@ function thaadSpareCountUp(){
         //親要素のdivに「id+カウント数」を追加
         div_element.setAttribute("id", "thaadSpareParent" + thaadSpareCount);
         div_element.innerHTML = '<div class="name-box name-box-thaad-team"><input type="text" class="name-input" value="："></div>';
-        var parent_object = document.getElementById("nameBoxDiv");
+        var parent_object = document.getElementById("playerBoxDiv");
         parent_object.appendChild(div_element);
         $('.name-box').draggable();
     }
